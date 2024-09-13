@@ -6,5 +6,6 @@ class Member(models.Model):
     last_name = models.CharField(max_length=255)
     dob = models.DateField(null=True)
     phone = models.IntegerField(null=True)
-
-
+    gender = models.CharField(max_length=12, null=True)
+    address = models.CharField(max_length=255, null=True)
+    
