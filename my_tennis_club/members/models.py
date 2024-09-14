@@ -8,4 +8,7 @@ class Member(models.Model):
     phone = models.IntegerField(null=True)
     gender = models.CharField(max_length=12, null=True)
     address = models.CharField(max_length=255, null=True)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
     
