@@ -8,7 +8,7 @@
 <body>
     <ul>
         {% for member in mymembers %}
-        <li> {{member.first_name}} {{member.last_name}} </li>
+        <li><a href="details/{{ member.id }}">{{member.first_name}} {{member.last_name}}</a></li>
         {% endfor %}
     </ul>
 </body>
